@@ -16,6 +16,6 @@ public:
 	CMyNativeLib(void);
 };
 
-extern MYNATIVELIB_API int nPointerSize;
+extern "C" MYNATIVELIB_API int nPointerSize;
 
-MYNATIVELIB_API int getPointerSize(void);
+extern "C" MYNATIVELIB_API int getPointerSize(void);
