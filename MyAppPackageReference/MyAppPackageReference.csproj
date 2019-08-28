@@ -4,7 +4,6 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Platforms>x64;x86</Platforms>
-    <Platform>x64</Platform>
     <OutputPath>bin\$(Configuration)\$(Platform)</OutputPath>
   </PropertyGroup>
 
@@ -12,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="coincoin" Version="1.0.0" />
+    <PackageReference Include="coincoin" Version="1.0.2" />
   </ItemGroup>
 
 </Project>
