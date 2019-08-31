@@ -1,2 +1,0 @@
-#define MYNATIVELIB_API __declspec(dllexport)
-#define MYNATIVELIB_API __declspec(dllimport)

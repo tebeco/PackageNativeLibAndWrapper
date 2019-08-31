@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyDotNetLib
+namespace ThirdPartDotNet
 {
     public static class PointerHelper
     {
         public static int GetPointSize()
         {
-            return MyDotNetLibWrapper.GetPointerSize();
+            return ThirdPartDotNetWrapper.GetPointerSize();
         }
     }
 }
