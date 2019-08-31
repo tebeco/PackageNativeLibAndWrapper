@@ -8,10 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="coincoin" Version="1.0.2" />
+    <PackageReference Include="MyDotNetLib" Version="1.0.2" />
   </ItemGroup>
 
 </Project>

@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <NuspecFile>MyDotNetLib.nuspec</NuspecFile>
     <!--<Platforms>AnyCPU;x64;x86</Platforms>-->
     <!--<OutputPath>bin\$(Configuration)\$(Platform)</OutputPath>-->
   </PropertyGroup>
