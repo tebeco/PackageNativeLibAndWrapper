@@ -5,6 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\third-part\ThirdPartDotNet\ThirdPartDotNet.csproj" />
+    <ProjectReference Include="..\MyDotNetLib.ThirdPart\MyDotNetLib.ThirdPart.csproj" />
   </ItemGroup>
 </Project>
