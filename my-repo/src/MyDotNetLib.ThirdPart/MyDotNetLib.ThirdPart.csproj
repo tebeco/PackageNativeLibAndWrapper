@@ -2,8 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
+  <Target Name="CopyPackage" AfterTargets="Pack">
+    <Copy
+      SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
+      DestinationFolder="C:\workspace\github\TeBeCo\PackageNativeLibAndWrapper\LocalNugetFolder" />
+  </Target>
+  
   <ItemGroup>
     <None Include="lib\netstandard2.0\ThirdPartDotNet.dll">
       <Pack>true</Pack>

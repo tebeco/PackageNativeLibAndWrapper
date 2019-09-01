@@ -2,9 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackOnBuild>true</PackOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\MyDotNetLib.ThirdPart\MyDotNetLib.ThirdPart.csproj" />
   </ItemGroup>
+
+<Target Name="CopyPackage" AfterTargets="Pack">
+  <Copy
+    SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
+    DestinationFolder="C:\workspace\github\TeBeCo\PackageNativeLibAndWrapper\LocalNugetFolder" />
+  </Target>
+
 </Project>
