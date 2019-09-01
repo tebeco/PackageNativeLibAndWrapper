@@ -1,9 +1,7 @@
-﻿using ThirdPartDotNet;
-
-namespace MyDotNetLib
+﻿namespace MyDotNetLib
 {
-    public class MyNugetPointerHelper
+    public static class MyNugetPointerHelper
     {
-        public static int GetPointSize() => PointerHelper.GetPointSize();
+        //public static int GetPointSize() => ThirdPartDotNet.PointerHelper.GetPointSize();
     }
 }
