@@ -10,17 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{1E090F30
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdPartDotNet", "third-part\ThirdPartDotNet\ThirdPartDotNet.csproj", "{55A2229C-7B75-49FB-A75D-F03E344819DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThirdPartDotNet", "ThirdPartDotNet\ThirdPartDotNet.csproj", "{55A2229C-7B75-49FB-A75D-F03E344819DD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThirdPartNative", "third-part\ThirdPartNative\ThirdPartNative.vcxproj", "{3C0B760D-F9CD-4359-8118-38339C458C28}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetLib", "src\MyDotNetLib\MyDotNetLib.csproj", "{337A97D0-BE76-4B45-A87F-CC8A800530F5}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsumingApp", "samples\ConsumingApp\ConsumingApp.csproj", "{4BD6646A-3BA5-4406-A3FD-FC7CEE4216A6}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{AF083D34-9DE6-472B-8E4E-008C6C003636}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{81063412-192E-475B-B8D5-971E72B2E731}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ThirdPartNative", "ThirdPartNative\ThirdPartNative.vcxproj", "{3C0B760D-F9CD-4359-8118-38339C458C28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
