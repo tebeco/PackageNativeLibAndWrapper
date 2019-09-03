@@ -7,6 +7,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MyDotNetLib.ThirdPart\MyDotNetLib.ThirdPart.csproj" />
+    
+    <Reference Include="ThirdPartMyDotNet">
+      <HintPath>..\MyDotNetLib.ThirdPart\lib\netstandard2.0\ThirdPartDotNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 <Target Name="CopyPackage" AfterTargets="Pack">

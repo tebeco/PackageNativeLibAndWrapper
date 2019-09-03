@@ -1,4 +1,5 @@
 ﻿using System;
+using MyDotNetLib;
 
 namespace ConsumingApp  
 {
@@ -6,7 +7,7 @@ namespace ConsumingApp
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine($"Current pointer size is : '{PointerHelper.GetPointSize()}'!");
+            Console.WriteLine($"Current pointer size is : '{MyNugetPointerHelper.GetPointSize()}'!");
         }
     }
 }
