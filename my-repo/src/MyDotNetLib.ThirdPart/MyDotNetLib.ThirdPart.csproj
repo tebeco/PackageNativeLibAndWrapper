@@ -17,22 +17,22 @@
       <PackagePath>lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
     </None>
 
-    <None Include="runtime\win-x86\native\THIRDPARTNATIVE.dll">
+    <None Include="runtimes\win-x86\native\THIRDPARTNATIVE.dll">
       <Pack>true</Pack>
-      <PackagePath>runtime\win-x86\native\THIRDPARTNATIVE.dll</PackagePath>
+      <PackagePath>runtimes\win-x86\native\THIRDPARTNATIVE.dll</PackagePath>
     </None>
-    <None Include="runtime\win-x86\lib\netstandard2.0\ThirdPartDotNet.dll">
+    <None Include="runtimes\win-x86\lib\netstandard2.0\ThirdPartDotNet.dll">
       <Pack>true</Pack>
-      <PackagePath>runtime\win-x86\lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
+      <PackagePath>runtimes\win-x86\lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
     </None>
 
-    <None Include="runtime\win-x64\native\THIRDPARTNATIVE.dll">
+    <None Include="runtimes\win-x64\native\THIRDPARTNATIVE.dll">
       <Pack>true</Pack>
-      <PackagePath>runtime\win-x64\native\THIRDPARTNATIVE.dll</PackagePath>
+      <PackagePath>runtimes\win-x64\native\THIRDPARTNATIVE.dll</PackagePath>
     </None>
-    <None Include="runtime\win-x64\lib\netstandard2.0\ThirdPartDotNet.dll">
+    <None Include="runtimes\win-x64\lib\netstandard2.0\ThirdPartDotNet.dll">
       <Pack>true</Pack>
-      <PackagePath>runtime\win-x64\lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
+      <PackagePath>runtimes\win-x64\lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
     </None>
   </ItemGroup>
 
