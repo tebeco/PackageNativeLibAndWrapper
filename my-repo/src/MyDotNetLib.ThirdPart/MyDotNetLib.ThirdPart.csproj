@@ -7,16 +7,23 @@
   </PropertyGroup>
 
   <Target Name="CopyPackage" AfterTargets="Pack">
-    <Copy
-      SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
-      DestinationFolder="C:\workspace\github\TeBeCo\PackageNativeLibAndWrapper\LocalNugetFolder" />
+    <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="C:\workspace\github\TeBeCo\PackageNativeLibAndWrapper\LocalNugetFolder" />
   </Target>
+
+  <ItemGroup>
+
+    <Reference Include="ThirdPartMyDotNet">
+      <HintPath>lib\netstandard2.0\ThirdPartDotNet.dll</HintPath>
+    </Reference>
+
+  </ItemGroup>
   
   <ItemGroup>
-    <None Include="lib\netstandard2.0\ThirdPartDotNet.dll">
-      <Pack>true</Pack>
-      <PackagePath>lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
-    </None>
+      <None Include="lib\netstandard2.0\ThirdPartDotNet.dll">
+        <Pack>true</Pack>
+        <PackagePath>lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
 
     <None Include="runtimes\win-x86\native\THIRDPARTNATIVE.dll">
       <Pack>true</Pack>
@@ -30,10 +37,12 @@
     <None Include="runtimes\win-x64\native\THIRDPARTNATIVE.dll">
       <Pack>true</Pack>
       <PackagePath>runtimes\win-x64\native\THIRDPARTNATIVE.dll</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Include="runtimes\win-x64\lib\netstandard2.0\ThirdPartDotNet.dll">
       <Pack>true</Pack>
       <PackagePath>runtimes\win-x64\lib\netstandard2.0\ThirdPartDotNet.dll</PackagePath>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

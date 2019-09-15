@@ -9,15 +9,21 @@
   <ItemGroup>
     <ProjectReference Include="..\MyDotNetLib.ThirdPart\MyDotNetLib.ThirdPart.csproj" />
     
+    <!--
     <Reference Include="ThirdPartMyDotNet">
+      <HintPath>..\MyDotNetLib.ThirdPart\lib\netstandard2.0\ThirdPartDotNet.dll</HintPath>
+    </Reference>
+    -->
+    </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ThirdPartDotNet">
       <HintPath>..\MyDotNetLib.ThirdPart\lib\netstandard2.0\ThirdPartDotNet.dll</HintPath>
     </Reference>
   </ItemGroup>
 
 <Target Name="CopyPackage" AfterTargets="Pack">
-  <Copy
-    SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg"
-    DestinationFolder="C:\workspace\github\TeBeCo\PackageNativeLibAndWrapper\LocalNugetFolder" />
+  <Copy SourceFiles="$(OutputPath)..\$(PackageId).$(PackageVersion).nupkg" DestinationFolder="C:\workspace\github\TeBeCo\PackageNativeLibAndWrapper\LocalNugetFolder" />
   </Target>
 
 </Project>
